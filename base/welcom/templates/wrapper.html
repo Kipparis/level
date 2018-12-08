@@ -1,0 +1,27 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'welcom/css/bootstrap.min.css' %}" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/welcom/css/bootstrap.min.css" type="text/css"> -->
+</head>
+<body>
+    {% block content %}
+    {% endblock %}            
+    <div class="jumbotron">
+        <div class="container">
+            <h2>Wanna know more?</h2>
+            <p>You can subscribe for digital, game and many others news. I'll send you only best of them</p>
+            <p>
+                <a href="/" class="btn btn-primary btn-lg">no ty</a>
+                <a href="/register" class="btn btn-success btn-lg">lets go &raquo;</a>
+            </p>
+        </div>
+    </div>
+    {% include "includes/current_info.html" %}
+</body>
+</html>
